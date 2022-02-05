@@ -12,16 +12,16 @@ const config: PlaywrightTestConfig = {
     // If a test fails, retry it additional 2 times
     retries: 2,
     // Artifacts folder where screenshots, videos, and traces are stored.
-    outputDir: 'test-results/',
+    // outputDir: 'test-results/',
 
     // Run your local dev server before starting the tests:
     // https://playwright.dev/docs/test-advanced#launching-a-development-web-server-during-the-tests
-    webServer: {
-        command: 'npm run dev',
-        port: 3000,
-        timeout: 120 * 1000,
-        reuseExistingServer: !process.env.CI,
-    },
+    // webServer: {
+    //     command: 'npm run dev',
+    //     port: 3000,
+    //     timeout: 120 * 1000,
+    //     reuseExistingServer: !process.env.CI,
+    // },
 
     use: {
         // Retry a test if its failing with enabled tracing. This allows you to analyse the DOM, console logs, network traffic etc.
